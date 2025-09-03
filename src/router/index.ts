@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AdminView from '../views/Admin/AdminView.vue'
 import AboutView from '@/views/AboutView.vue'
 import AdminUsers from '@/views/Admin/AdminUsers.vue'
+import ApplyLeave from '@/views/Admin/ApplyLeave.vue'
 import AdminLayout from '@/Layouts/AdminLayout.vue'
 import Register from '@/views/Admin/Register.vue'
 import Login from '@/views/Login.vue'
@@ -28,6 +29,7 @@ const router = createRouter({
       children: [
         { path: "dashboard", name: "dashboard", component: AdminView, meta: { requiresAuth: true }  },
         { path: "users", name: "users", component: AdminUsers, meta: { requiresAuth: true } },
+        { path: "users/leave", name: "leave", component: ApplyLeave, meta: { requiresAuth: true } },
         { path: "register", name: "register", component: Register, meta: { requiresAuth: true }  },
       ],
     },

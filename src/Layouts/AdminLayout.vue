@@ -134,6 +134,7 @@ const router = useRouter()
 const navigation = [
   { name: 'Dashboard', to: '/admin/dashboard', icon: HomeIcon, current: true },
   { name: 'Users', to: '/admin/users', icon: UsersIcon, current: false },
+  { name: 'Apply Leave', to: '/admin/users/leave', icon: UsersIcon, current: false },
 ]
 
 const userNavigation = [
